@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'styled_text.dart';
 
+// variable practice
+var startAlignment = Alignment.topLeft;
+var endAlignment = Alignment.bottomRight;
+
 // how to make a calss ?
 // start with uppercase like camlecase GradientContainer and be descrebtive to what it does
 //extends is a dart keyword used to inherit from stateless widget like data and logic that is required by flutter
@@ -13,15 +17,15 @@ class GradientContainer extends StatelessWidget {
   @override
   Widget build(context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
+          colors: const [
             Color.fromARGB(255, 0, 0, 0),
             Color.fromARGB(255, 255, 255, 255)
           ],
-          begin: Alignment
-              .topLeft, // Alignment. is a trick instead of using x and y and i can always search docs
-          end: Alignment.bottomRight,
+          begin:
+              startAlignment, // Alignment. is a trick instead of using x and y and i can always search docs
+          end: endAlignment,
         ),
       ),
       child: const Center(child: StyledText()),
