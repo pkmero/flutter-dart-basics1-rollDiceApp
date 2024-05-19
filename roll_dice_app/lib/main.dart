@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Gradient_Container.dart';
+import 'gradient_container.dart';
 // void is main entry point
 // material app is root widget
 

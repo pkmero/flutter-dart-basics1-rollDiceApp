@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'styled_text.dart';
 
 // how to make a calss ?
 // start with uppercase like camlecase GradientContainer and be descrebtive to what it does
@@ -23,15 +24,7 @@ class GradientContainer extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: const Center(
-        child: Text(
-          'Roll The Dice',
-          style: TextStyle(
-            fontSize: 28,
-            color: Colors.white,
-          ),
-        ),
-      ),
+      child: const Center(child: StyledText()),
     );
   }
 }
